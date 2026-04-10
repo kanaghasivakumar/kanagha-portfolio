@@ -2,10 +2,25 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './ProjectCard.css'
 
+// Unsplash image URLs for project cards
+const projectImages = {
+  codenames: 'https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=500&h=300&fit=crop',
+  wildfire: 'https://images.unsplash.com/photo-1577720643272-265f434b0af8?w=500&h=300&fit=crop',
+  ocr: 'https://images.unsplash.com/photo-1516534775068-bb57e9b4a484?w=500&h=300&fit=crop',
+  steg: 'https://images.unsplash.com/photo-1512941691920-25bda36dc6f2?w=500&h=300&fit=crop',
+}
+
 function ProjectCard({ project }) {
+  const backgroundImage = projectImages[project.id] || projectImages.codenames
+
   return (
     <motion.div
       className="project-card"
+      style={{
+        backgroundImage: `url('${backgroundImage}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
       whileHover={{ y: -8, transition: { duration: 0.2 } }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

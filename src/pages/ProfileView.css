@@ -5,6 +5,26 @@
   color: #ffffff;
 }
 
+.profile-view.recruiter {
+  --primary-color: #E50914;
+  --secondary-color: #FF5A5F;
+}
+
+.profile-view.developer {
+  --primary-color: #0099FF;
+  --secondary-color: #00D4FF;
+}
+
+.profile-view.friend {
+  --primary-color: #FFD700;
+  --secondary-color: #FFEB3B;
+}
+
+.profile-view.stalker {
+  --primary-color: #7B7B7B;
+  --secondary-color: #999999;
+}
+
 .profile-error {
   padding: 2rem;
   text-align: center;
@@ -66,6 +86,23 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.content-block.featured {
+  position: relative;
+  margin-bottom: 5rem;
+  padding: 3rem 0;
+}
+
+.content-block.featured h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(to right, #ffffff, #b3b3b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Projects Grid */

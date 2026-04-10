@@ -86,6 +86,7 @@ function Browse({ selectedProfile }) {
       <Hero
         title="Browse Everything"
         subtitle="Explore projects, reads, watches, and more"
+        profileId="recruiter"
       />
 
       <div className="browse-container">

@@ -82,12 +82,13 @@ function ProfileView({ selectedProfile }) {
   const tabs = getTabs()
 
   return (
-    <div className="profile-view">
+    <div className={`profile-view ${profileId}`}>
       <Navigation currentProfile={profileId} />
       
       <Hero 
         title={message.title}
         subtitle={message.subtitle}
+        profileId={profileId}
       />
 
       <div className="profile-container">

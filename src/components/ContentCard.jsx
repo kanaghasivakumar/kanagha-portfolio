@@ -2,6 +2,22 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './ContentCard.css'
 
+// Unsplash image URLs for content cards
+const contentImages = {
+  read: {
+    default: 'https://images.unsplash.com/photo-150784272343-583f20270319?w=400&h=300&fit=crop',
+  },
+  watch: {
+    default: 'https://images.unsplash.com/photo-1533613220915-121e63e19eac?w=400&h=300&fit=crop',
+  },
+  listen: {
+    default: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=300&fit=crop',
+  },
+  current: {
+    default: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop',
+  },
+}
+
 function ContentCard({ item, type }) {
   const getContentIcon = () => {
     switch (type) {
@@ -34,9 +50,16 @@ function ContentCard({ item, type }) {
     }
   }
 
+  const backgroundImage = contentImages[type]?.default || contentImages.read.default
+
   return (
     <motion.div
       className="content-card"
+      style={{
+        backgroundImage: `url('${backgroundImage}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
       whileHover={{ y: -6, transition: { duration: 0.2 } }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
