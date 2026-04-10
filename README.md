@@ -1,2 +1,0 @@
-# kanagha-portfolio
-Portfolio Website
