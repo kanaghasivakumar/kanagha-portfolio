@@ -1,16 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { portfolioData } from '../data/portfolio'
 import './Hero.css'
 
-const heroImages = {
-  recruiter: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop',
-  developer: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=500&fit=crop',
-  friend: 'https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=1200&h=500&fit=crop',
-  stalker: 'https://images.unsplash.com/photo-1526374965328-7f5ae4e8a42f?w=1200&h=500&fit=crop',
-}
-
 function Hero({ title, subtitle, profileId }) {
-  const backgroundImage = heroImages[profileId] || heroImages.recruiter
+  // Get the profile data to retrieve heroImage
+  const profile = portfolioData.profiles.find(p => p.id === profileId)
+  const backgroundImage = profile?.heroImage || 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop'
 
   const containerVariants = {
     hidden: { opacity: 0 },

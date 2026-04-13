@@ -1,7 +1,7 @@
 export const portfolioData = {
   personal: {
     name: "Kanagha Sivakumar",
-    title: "AI Engineer | Speech Intelligence Researcher",
+    title: "AI Engineer | Speech Intelligibility Researcher",
     email: "kanaghasivakumar2027@u.northwestern.edu",
     github: "https://github.com/kanaghasivakumar",
     linkedin: "https://linkedin.com/in/kanagha-santhoshini-sivakumar",
@@ -9,17 +9,52 @@ export const portfolioData = {
 
   experience: [
     {
+      id: "pedzstar",
+      company: "PedzStar Lab, Northwestern University",
+      role: "Speech Intelligibility Prediction (SIP)",
+      dates: "Mar 2026 – Present",
+      location: "Evanston, IL",
+      achievements: [
+        "Developing SIP, a framework decoupling speech intelligibility from ASR confidence by measuring acoustic uncertainty reduction.",
+        "Fine-tuning transformer-based ASR models to address biases from softmax sharpening, LM dominance, and beam search.",
+        "Designing uncertainty-aware audio embeddings for structured, signal-grounded intelligibility estimates.",
+        "Deploying models targeting clinical and developmental speech populations."
+      ],
+      showInProfiles: ["recruiter", "developer"],
+    },
+    {
       id: "sunware",
       company: "Sunware Technologies Pvt. Ltd.",
       role: "Associate Software Engineer",
-      dates: "Nov 2023 – Sep 2025",
+      dates: "Jun 2024 – Sep 2025",
       location: "Chennai, India",
       achievements: [
         "Built an LLM-powered OCR pipeline using Gemini Flash 2.0 to automate shipping detail entry for a logistics client, reducing manual data entry by over 85%.",
         "Built a client-facing image editing system supporting flexible exposure merging and interactive tuning, cutting processing time by over 90%.",
         "Mentored interns through a 12-week training program; participated in interview panels and recommended candidates for full-time conversion.",
+      ],
+      showInProfiles: ["recruiter", "developer"],
+    },
+    {
+      id: "sunware-trainee",
+      company: "Sunware Technologies Pvt. Ltd.",
+      role: "Software Engineer Trainee",
+      dates: "Nov 2023 – Jun 2024",
+      location: "Chennai, India",
+      achievements: [
         "Developed an OCR pipeline for digitizing handwritten pilot logbooks using AWS Textract + GPT-4, achieving 91% accuracy with a domain-specific aviation dictionary.",
-        "Designed an autoencoder to predict pollutant levels for the Bangalore Police Department, forecasting threshold breaches every 15 minutes."
+        "Supported a major media advertising company by utilizing Azure Document Intelligence for document tagging and model training.",
+      ],
+      showInProfiles: ["recruiter", "developer"],
+    },
+    {
+      id: "sunware-ml",
+      company: "Sunware Technologies Pvt. Ltd.",
+      role: "Machine Learning Intern",
+      dates: "Nov 2023 – Dec 2023",
+      location: "Chennai, India",
+      achievements: [
+        "Designed an autoencoder to predict pollutant levels for the Bangalore Police Department, forecasting threshold breaches every 15 minutes.",
       ],
       showInProfiles: ["recruiter", "developer"],
     },
@@ -30,24 +65,10 @@ export const portfolioData = {
       dates: "Aug 2022 – Sep 2022",
       location: "Chennai, India",
       achievements: [
-        "Processed surveillance video to detect, localize, and count people and groups entering a building."
+        "Processed surveillance video to detect, localize, and count people and groups entering a building.",
       ],
       showInProfiles: ["recruiter", "developer"],
     },
-    {
-      id: "pedzstar",
-      company: "PedzStar Lab, Northwestern University",
-      role: "Speech Intelligence Prediction (SIP)",
-      dates: "Mar 2026 – Present",
-      location: "Evanston, IL",
-      achievements: [
-        "Developing SIP, a framework decoupling speech intelligibility from ASR confidence by measuring acoustic uncertainty reduction.",
-        "Fine-tuning transformer-based ASR models to address biases from softmax sharpening, LM dominance, and beam search.",
-        "Designing uncertainty-aware audio embeddings for structured, signal-grounded intelligibility estimates.",
-        "Deploying models targeting clinical and developmental speech populations."
-      ],
-      showInProfiles: ["recruiter", "developer"],
-    }
   ],
 
   projects: [
@@ -59,7 +80,7 @@ export const portfolioData = {
       tech: ["Python", "ConceptNet", "Knowledge Graphs", "NLP"],
       year: "2026",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["recruiter", "developer", "stalker"],
       highlight: true,
       type: "project"
     },
@@ -71,7 +92,7 @@ export const portfolioData = {
       tech: ["PyTorch", "TensorFlow", "FCOS", "CNN", "Computer Vision"],
       year: "2026",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["recruiter", "developer", "stalker"],
       highlight: true,
       type: "project"
     },
@@ -83,7 +104,7 @@ export const portfolioData = {
       tech: ["Gemini API", "OCR", "LLM Integration", "AWS"],
       year: "2025",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["recruiter", "developer", "stalker"],
       highlight: true,
       impact: "85% manual entry reduction",
       type: "project"
@@ -96,7 +117,51 @@ export const portfolioData = {
       tech: ["ResNet", "PyTorch", "Deep Learning"],
       year: "2022",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["recruiter", "developer", "stalker"],
+      type: "project"
+    },
+    {
+      id: "starbucks",
+      title: "Business Promotions Analysis - Starbucks Data",
+      tagline: "ML-powered promotional offer analysis",
+      description: "Analyzed the success of Starbucks promotional offers using machine learning models to identify patterns and effectiveness.",
+      tech: ["Machine Learning", "Python", "Data Analysis"],
+      year: "2022",
+      github: "https://github.com/kanaghasivakumar",
+      showInProfiles: ["recruiter", "developer", "stalker"],
+      type: "project"
+    },
+    {
+      id: "ddos-detection",
+      title: "Comparative Analysis of ML Algorithms for DDoS Detection",
+      tagline: "Multi-algorithm security threat detection",
+      description: "Compared various ML algorithms (Random Forest, LightGBM, XGBoost, AdaBoost, SVM) for DDoS attack detection. Found that LightGBM and Random Forest outperformed other models. Overall architecture consisted of 4 modules.",
+      tech: ["Machine Learning", "Random Forest", "LightGBM", "XGBoost", "Python"],
+      year: "2021",
+      github: "https://github.com/kanaghasivakumar",
+      showInProfiles: ["recruiter", "developer", "stalker"],
+      type: "project"
+    },
+    {
+      id: "movie-script",
+      title: "AI Movie Script Generator",
+      tagline: "RNN-powered creative text generation",
+      description: "Used RNN and LSTM to build a movie script generator based on user-provided excerpts.",
+      tech: ["RNN", "LSTM", "Python", "NLP"],
+      year: "2021",
+      github: "https://github.com/kanaghasivakumar",
+      showInProfiles: ["recruiter", "developer", "stalker"],
+      type: "project"
+    },
+    {
+      id: "exam-prep",
+      title: "Comparison of Algorithms for Exam Preparation Assistance",
+      tagline: "Knapsack problem application",
+      description: "Compared various algorithms to approach an application of the knapsack problem for exam preparation optimization.",
+      tech: ["Algorithms", "Python", "Dynamic Programming"],
+      year: "2020",
+      github: "https://github.com/kanaghasivakumar",
+      showInProfiles: ["recruiter", "developer", "stalker"],
       type: "project"
     }
   ],
@@ -104,21 +169,21 @@ export const portfolioData = {
   research: [
     {
       id: "sip",
-      title: "Speech Intelligence Prediction (SIP)",
+      title: "Speech Intelligibility Prediction (SIP)",
       status: "In Progress",
       description: "Decoupling speech intelligibility from ASR confidence through acoustic uncertainty quantification.",
       focus: "Speech Processing, ASR, Uncertainty Quantification",
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["recruiter", "developer", "stalker"],
       type: "research"
     },
     {
       id: "ser",
       title: "Speech Emotion Recognition using CNNs",
-      status: "Published",
+      status: "Unpublished",
       year: "2023",
       description: "Investigated audio feature extraction strategies for SER; found that combining multiple techniques significantly improves accuracy.",
       focus: "Audio ML, CNN, Feature Engineering",
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["recruiter", "developer", "stalker"],
       type: "research"
     }
   ],
@@ -133,7 +198,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Understanding multimodal approaches to emotion recognition",
       category: "AI/ML",
-      showInProfiles: ["developer", "friend"],
+      showInProfiles: ["developer", "friends", "stalker"],
     },
     {
       id: "read-2",
@@ -144,7 +209,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Clinical speech data for developmental speech populations",
       category: "Research",
-      showInProfiles: ["developer", "friend"],
+      showInProfiles: ["developer", "friends", "stalker"],
     },
     {
       id: "read-3",
@@ -155,7 +220,7 @@ export const portfolioData = {
       year: 2023,
       reason: "Systems thinking and performance optimization",
       category: "Systems",
-      showInProfiles: ["developer"],
+      showInProfiles: ["developer", "friends", "stalker"],
     },
     {
       id: "read-4",
@@ -165,7 +230,7 @@ export const portfolioData = {
       year: 2018,
       reason: "Beautiful storytelling and nature writing",
       category: "Fiction",
-      showInProfiles: ["friend"],
+      showInProfiles: ["friends", "stalker"],
     },
     {
       id: "read-5",
@@ -175,7 +240,7 @@ export const portfolioData = {
       year: 2011,
       reason: "Understanding cognitive biases and decision-making",
       category: "Psychology",
-      showInProfiles: ["friend"],
+      showInProfiles: ["friends", "stalker"],
     }
   ],
 
@@ -189,7 +254,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Research ethics and institutional review processes",
       category: "Education",
-      showInProfiles: ["developer", "friend"],
+      showInProfiles: ["developer", "friends", "stalker"],
     },
     {
       id: "watch-2",
@@ -200,7 +265,7 @@ export const portfolioData = {
       year: 2022,
       reason: "Innovative sci-fi storytelling with philosophical themes",
       category: "Entertainment",
-      showInProfiles: ["friend"],
+      showInProfiles: ["friends", "stalker"],
     },
     {
       id: "watch-3",
@@ -211,18 +276,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Deep dive into transformer architectures and applications",
       category: "AI/ML",
-      showInProfiles: ["developer"],
-    },
-    {
-      id: "watch-4",
-      title: "The Art of Problem Solving",
-      creator: "3Blue1Brown",
-      type: "Video Series",
-      episodes: "Multiple",
-      year: 2023,
-      reason: "Mathematical intuition and visual explanations",
-      category: "Education",
-      showInProfiles: ["friend"],
+      showInProfiles: ["developer", "friends", "stalker"],
     }
   ],
 
@@ -235,38 +289,27 @@ export const portfolioData = {
       year: 2008,
       reason: "Iconic, timeless pop track",
       category: "Music",
-      showInProfiles: ["friend"],
+      showInProfiles: ["friends", "stalker"],
     },
     {
       id: "listen-2",
-      title: "The Joe Rogan Experience",
-      host: "Joe Rogan",
-      type: "Podcast",
-      episodes: "Various",
-      topics: ["Conversations", "Science", "Philosophy"],
-      reason: "Diverse range of thought-provoking conversations",
-      category: "Podcast",
-      showInProfiles: ["friend"],
-    },
-    {
-      id: "listen-3",
       title: "Lex Fridman Podcast",
       host: "Lex Fridman",
       type: "Podcast",
       topics: ["AI", "Science", "Technology"],
       reason: "Deep technical discussions with leading AI researchers",
       category: "Podcast",
-      showInProfiles: ["friend", "developer"],
+      showInProfiles: ["friends", "developer", "stalker"],
     },
     {
-      id: "listen-4",
+      id: "listen-3",
       title: "Machine Learning Street Talk",
       host: "Tim Scarfe & Yannic Kilcher",
       type: "Podcast",
       topics: ["AI Research", "ML", "Deep Learning"],
       reason: "Latest developments in machine learning research",
       category: "Podcast",
-      showInProfiles: ["developer"],
+      showInProfiles: ["developer", "friends", "stalker"],
     }
   ],
 
@@ -274,11 +317,11 @@ export const portfolioData = {
     {
       id: "current-1",
       type: "research",
-      title: "Speech Intelligence Prediction (SIP) Framework",
+      title: "Speech Intelligibility Prediction (SIP) Framework",
       description: "Developing a framework that decouples speech intelligibility from ASR confidence scores through acoustic uncertainty quantification.",
       progress: "In Progress",
       startDate: "Mar 2026",
-      showInProfiles: ["recruiter", "developer", "friend"],
+      showInProfiles: ["recruiter", "developer", "friends", "stalker"],
     },
     {
       id: "current-2",
@@ -287,7 +330,7 @@ export const portfolioData = {
       description: "Beginning work on diffusion-based transformer models for generative tasks.",
       progress: "Early Stage",
       startDate: "2026",
-      showInProfiles: ["developer"],
+      showInProfiles: ["developer", "friends", "stalker"],
     },
     {
       id: "current-3",
@@ -295,7 +338,7 @@ export const portfolioData = {
       title: "Advanced Audio ML & Signal Processing",
       description: "Deep dive into audio processing techniques and speech signal analysis for intelligibility research.",
       progress: "Ongoing",
-      showInProfiles: ["developer", "friend"],
+      showInProfiles: ["developer", "friends", "stalker"],
     }
   ],
 
@@ -357,30 +400,34 @@ export const portfolioData = {
       icon: "👔",
       color: "#E50914",
       emphasis: ["projects", "experience", "skills"],
+      heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop",
     },
     {
       id: "developer",
       name: "Developer",
       description: "See technical depth and code",
       icon: "💻",
-      color: "#E50914",
+      color: "#0099FF",
       emphasis: ["research", "projects", "skills"],
+      heroImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=500&fit=crop",
     },
     {
-      id: "friend",
-      name: "Friend",
+      id: "friends",
+      name: "Friends",
       description: "Get to know the person",
       icon: "👋",
-      color: "#E50914",
+      color: "#FFD700",
       emphasis: ["reads", "watches", "listens"],
+      heroImage: "https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=1200&h=500&fit=crop",
     },
     {
       id: "stalker",
       name: "Stalker",
       description: "Everything (and then some)",
       icon: "🕵️",
-      color: "#E50914",
+      color: "#7B7B7B",
       emphasis: ["everything"],
+      heroImage: "https://images.unsplash.com/photo-1526374965328-7f5ae4e8a42f?w=1200&h=500&fit=crop",
     }
   ]
 }

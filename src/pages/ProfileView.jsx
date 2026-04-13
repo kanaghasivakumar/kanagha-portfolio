@@ -51,7 +51,7 @@ function ProfileView({ selectedProfile }) {
       title: "Code. Research. Build.",
       subtitle: "Deep Technical Work",
     },
-    friend: {
+    friends: {
       title: "Get to Know Me",
       subtitle: "Interests, Reading, and Life",
     },
@@ -71,7 +71,7 @@ function ProfileView({ selectedProfile }) {
       return ['overview', 'projects', 'contact']
     } else if (profileId === 'developer') {
       return ['overview', 'projects', 'research', 'contact']
-    } else if (profileId === 'friend') {
+    } else if (profileId === 'friends') {
       return ['overview', 'reads', 'watches', 'listens', 'contact']
     } else if (profileId === 'stalker') {
       return allTabs

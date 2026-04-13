@@ -15,7 +15,7 @@
   --secondary-color: #00D4FF;
 }
 
-.profile-view.friend {
+.profile-view.friends {
   --primary-color: #FFD700;
   --secondary-color: #FFEB3B;
 }
@@ -82,13 +82,7 @@
   margin-bottom: 4rem;
 }
 
-.content-block h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #ffffff;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
+
 
 .content-block.featured {
   position: relative;
@@ -111,6 +105,7 @@
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 /* Content Grid */
@@ -118,6 +113,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* Timeline */
@@ -125,6 +121,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 /* Currently Section */
@@ -132,6 +129,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* Research Section */
@@ -139,6 +137,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .research-item {
@@ -184,6 +183,9 @@
 /* Contact Section */
 .contact-section {
   max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
 }
 
 .contact-content {
