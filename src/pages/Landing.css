@@ -143,6 +143,21 @@
   display: block;
 }
 
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.profile-icon-gif {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
 .profile-info h3 {
   font-size: 1.25rem;
   color: #ffffff;

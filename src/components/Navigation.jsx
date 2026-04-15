@@ -68,7 +68,11 @@ function Navigation({ currentProfile }) {
                     onClick={() => handleProfileChange(profile.id)}
                     role="menuitem"
                   >
-                    <span className="icon">{profile.icon}</span>
+                    <img 
+                      src={profile.icon} 
+                      alt={`${profile.name} icon`}
+                      className="nav-profile-icon"
+                    />
                     <span>{profile.name}</span>
                   </button>
                 ))}

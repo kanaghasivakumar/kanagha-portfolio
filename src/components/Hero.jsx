@@ -4,9 +4,8 @@ import { portfolioData } from '../data/portfolio'
 import './Hero.css'
 
 function Hero({ title, subtitle, profileId }) {
-  // Get the profile data to retrieve heroImage
   const profile = portfolioData.profiles.find(p => p.id === profileId)
-  const backgroundImage = profile?.heroImage || 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop'
+  const backgroundImage = profile?.heroImage || 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&q=80&w=1200&h=600&fit=crop'
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -35,16 +34,13 @@ function Hero({ title, subtitle, profileId }) {
     <section 
       className="hero"
       style={{
-        backgroundImage: `url('${backgroundImage}')`,
+        backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.3) 100%), url('${backgroundImage}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
       }}
       aria-label="Hero section"
     >
-      <div className="hero-background">
-        <div className="hero-gradient"></div>
-      </div>
-
       <motion.div
         className="hero-content"
         variants={containerVariants}

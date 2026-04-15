@@ -143,7 +143,13 @@ function Landing({ onProfileSelect }) {
                     }}
                     aria-label={`View as ${profile.name}`}
                   >
-                    <div className="profile-icon">{profile.icon}</div>
+                    <div className="profile-avatar">
+                      <img 
+                        src={profile.icon} 
+                        alt={`${profile.name} icon`}
+                        className="profile-icon-gif"
+                      />
+                    </div>
                     <div className="profile-info">
                       <h3>{profile.name}</h3>
                     </div>

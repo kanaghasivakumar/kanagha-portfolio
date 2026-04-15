@@ -5,16 +5,16 @@ import './ContentCard.css'
 // Unsplash image URLs for content cards
 const contentImages = {
   read: {
-    default: 'https://images.unsplash.com/photo-150784272343-583f20270319?w=400&h=300&fit=crop',
+    default: '',
   },
   watch: {
-    default: 'https://images.unsplash.com/photo-1533613220915-121e63e19eac?w=400&h=300&fit=crop',
+    default: '',
   },
   listen: {
-    default: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=300&fit=crop',
+    default: '',
   },
   current: {
-    default: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop',
+    default: '',
   },
 }
 

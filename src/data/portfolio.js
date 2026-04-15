@@ -20,7 +20,7 @@ export const portfolioData = {
         "Designing uncertainty-aware audio embeddings for structured, signal-grounded intelligibility estimates.",
         "Deploying models targeting clinical and developmental speech populations."
       ],
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["developer", "recruiter"],
     },
     {
       id: "sunware",
@@ -33,7 +33,7 @@ export const portfolioData = {
         "Built a client-facing image editing system supporting flexible exposure merging and interactive tuning, cutting processing time by over 90%.",
         "Mentored interns through a 12-week training program; participated in interview panels and recommended candidates for full-time conversion.",
       ],
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["developer", "recruiter"],
     },
     {
       id: "sunware-trainee",
@@ -45,7 +45,7 @@ export const portfolioData = {
         "Developed an OCR pipeline for digitizing handwritten pilot logbooks using AWS Textract + GPT-4, achieving 91% accuracy with a domain-specific aviation dictionary.",
         "Supported a major media advertising company by utilizing Azure Document Intelligence for document tagging and model training.",
       ],
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["developer", "recruiter"],
     },
     {
       id: "sunware-ml",
@@ -56,7 +56,7 @@ export const portfolioData = {
       achievements: [
         "Designed an autoencoder to predict pollutant levels for the Bangalore Police Department, forecasting threshold breaches every 15 minutes.",
       ],
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["developer", "recruiter"],
     },
     {
       id: "textck",
@@ -67,7 +67,7 @@ export const portfolioData = {
       achievements: [
         "Processed surveillance video to detect, localize, and count people and groups entering a building.",
       ],
-      showInProfiles: ["recruiter", "developer"],
+      showInProfiles: ["developer", "recruiter"],
     },
   ],
 
@@ -80,7 +80,7 @@ export const portfolioData = {
       tech: ["Python", "ConceptNet", "Knowledge Graphs", "NLP"],
       year: "2026",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       highlight: true,
       type: "project"
     },
@@ -92,7 +92,7 @@ export const portfolioData = {
       tech: ["PyTorch", "TensorFlow", "FCOS", "CNN", "Computer Vision"],
       year: "2026",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       highlight: true,
       type: "project"
     },
@@ -104,7 +104,7 @@ export const portfolioData = {
       tech: ["Gemini API", "OCR", "LLM Integration", "AWS"],
       year: "2025",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       highlight: true,
       impact: "85% manual entry reduction",
       type: "project"
@@ -117,7 +117,7 @@ export const portfolioData = {
       tech: ["ResNet", "PyTorch", "Deep Learning"],
       year: "2022",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "project"
     },
     {
@@ -128,7 +128,7 @@ export const portfolioData = {
       tech: ["Machine Learning", "Python", "Data Analysis"],
       year: "2022",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "project"
     },
     {
@@ -139,7 +139,7 @@ export const portfolioData = {
       tech: ["Machine Learning", "Random Forest", "LightGBM", "XGBoost", "Python"],
       year: "2021",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "project"
     },
     {
@@ -150,7 +150,7 @@ export const portfolioData = {
       tech: ["RNN", "LSTM", "Python", "NLP"],
       year: "2021",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "project"
     },
     {
@@ -161,7 +161,7 @@ export const portfolioData = {
       tech: ["Algorithms", "Python", "Dynamic Programming"],
       year: "2020",
       github: "https://github.com/kanaghasivakumar",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "project"
     }
   ],
@@ -173,7 +173,7 @@ export const portfolioData = {
       status: "In Progress",
       description: "Decoupling speech intelligibility from ASR confidence through acoustic uncertainty quantification.",
       focus: "Speech Processing, ASR, Uncertainty Quantification",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "research"
     },
     {
@@ -183,7 +183,7 @@ export const portfolioData = {
       year: "2023",
       description: "Investigated audio feature extraction strategies for SER; found that combining multiple techniques significantly improves accuracy.",
       focus: "Audio ML, CNN, Feature Engineering",
-      showInProfiles: ["recruiter", "developer", "stalker"],
+      showInProfiles: ["developer", "recruiter", "stalker"],
       type: "research"
     }
   ],
@@ -198,7 +198,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Understanding multimodal approaches to emotion recognition",
       category: "AI/ML",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     },
     {
       id: "read-2",
@@ -209,7 +209,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Clinical speech data for developmental speech populations",
       category: "Research",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     },
     {
       id: "read-3",
@@ -220,12 +220,12 @@ export const portfolioData = {
       year: 2023,
       reason: "Systems thinking and performance optimization",
       category: "Systems",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     },
     {
       id: "read-4",
       title: "Where the Crawdads Sing",
-      author: "Delia Owens",
+      author: "Delia Owels",
       type: "Fiction",
       year: 2018,
       reason: "Beautiful storytelling and nature writing",
@@ -254,7 +254,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Research ethics and institutional review processes",
       category: "Education",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     },
     {
       id: "watch-2",
@@ -276,7 +276,7 @@ export const portfolioData = {
       year: 2024,
       reason: "Deep dive into transformer architectures and applications",
       category: "AI/ML",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     }
   ],
 
@@ -309,7 +309,7 @@ export const portfolioData = {
       topics: ["AI Research", "ML", "Deep Learning"],
       reason: "Latest developments in machine learning research",
       category: "Podcast",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     }
   ],
 
@@ -321,7 +321,7 @@ export const portfolioData = {
       description: "Developing a framework that decouples speech intelligibility from ASR confidence scores through acoustic uncertainty quantification.",
       progress: "In Progress",
       startDate: "Mar 2026",
-      showInProfiles: ["recruiter", "developer", "friends", "stalker"],
+      showInProfiles: ["developer", "recruiter", "friends", "stalker"],
     },
     {
       id: "current-2",
@@ -330,7 +330,7 @@ export const portfolioData = {
       description: "Beginning work on diffusion-based transformer models for generative tasks.",
       progress: "Early Stage",
       startDate: "2026",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     },
     {
       id: "current-3",
@@ -338,7 +338,7 @@ export const portfolioData = {
       title: "Advanced Audio ML & Signal Processing",
       description: "Deep dive into audio processing techniques and speech signal analysis for intelligibility research.",
       progress: "Ongoing",
-      showInProfiles: ["developer", "friends", "stalker"],
+      showInProfiles: ["recruiter", "friends", "stalker"],
     }
   ],
 
@@ -397,37 +397,37 @@ export const portfolioData = {
       id: "recruiter",
       name: "Recruiter",
       description: "See what impresses hiring managers",
-      icon: "👔",
-      color: "#E50914",
-      emphasis: ["projects", "experience", "skills"],
-      heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop",
+      icon: "/kanagha-portfolio/profile-icons/coder.gif",
+      color: "#0099FF",
+      emphasis: ["research", "projects", "skills"],
+      heroImage: "https://images.unsplash.com/photo-1670057037226-b3d65909424f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "developer",
       name: "Developer",
       description: "See technical depth and code",
-      icon: "💻",
-      color: "#0099FF",
-      emphasis: ["research", "projects", "skills"],
-      heroImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=500&fit=crop",
+      icon: "/kanagha-portfolio/profile-icons/human-resources.gif",
+      color: "#E50914",
+      emphasis: ["projects", "experience", "skills"],
+      heroImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "friends",
       name: "Friends",
       description: "Get to know the person",
-      icon: "👋",
+      icon: "/kanagha-portfolio/profile-icons/friends-hugging.gif",
       color: "#FFD700",
       emphasis: ["reads", "watches", "listens"],
-      heroImage: "https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=1200&h=500&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1665686377065-08ba896d16fd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "stalker",
       name: "Stalker",
       description: "Everything (and then some)",
-      icon: "🕵️",
+      icon: "/kanagha-portfolio/profile-icons/spy-hat-glasses.gif",
       color: "#7B7B7B",
       emphasis: ["everything"],
-      heroImage: "https://images.unsplash.com/photo-1526374965328-7f5ae4e8a42f?w=1200&h=500&fit=crop",
+      heroImage: "https://images.unsplash.com/photo-1520177102653-cc16ccf84a28?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     }
   ]
 }
