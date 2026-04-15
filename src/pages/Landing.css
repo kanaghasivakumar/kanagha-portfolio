@@ -156,6 +156,12 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(229, 9, 20, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.profile-card:hover .profile-icon-gif {
+  filter: drop-shadow(0 0 20px rgba(229, 9, 20, 0.6)) brightness(1.1);
 }
 
 .profile-info h3 {
