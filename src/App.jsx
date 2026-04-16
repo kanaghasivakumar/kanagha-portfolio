@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import {useEffect} from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom'
 import Landing from './pages/Landing'
 import ProfileView from './pages/ProfileView'
 import Browse from './pages/Browse'
@@ -13,6 +12,7 @@ function App() {
 
   function RedirectHandler() {
     const navigate = useNavigate();
+    const location = useLocation();
     useEffect(() => {
       const params = new URLSearchParams(window.location.search);
       const redirectPath = params.get('p');
