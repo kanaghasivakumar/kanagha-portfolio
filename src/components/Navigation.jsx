@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { portfolioData } from '../data/portfolio'
 import './Navigation.css'
@@ -32,10 +32,10 @@ function Navigation({ currentProfile }) {
 
         {/* Nav Links */}
         <div className="nav-links">
-          {currentProfile && location.pathname.includes('/profile') && (
-            <a href="/kanagha-portfolio/browse" className="nav-link">
+          {currentProfile && (
+            <Link to="/browse" className="nav-link">
               Browse
-            </a>
+            </Link>
           )}
         </div>
 
