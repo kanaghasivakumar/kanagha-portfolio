@@ -1,20 +1,325 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta name="google-site-verification" content="zC1aBehQmiVG-mpQK82R9O4iB4yG2KDHKP5CeBztVCk" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kanagha Sivakumar - AI Engineer, Researcher, and Builder. Explore my work, research, and interests." />
-    <meta name="keywords" content="AI, Machine Learning, Research, Speech Processing, Engineering" />
-    <meta name="author" content="Kanagha Sivakumar" />
-    <meta property="og:title" content="Kanagha Sivakumar - Portfolio" />
-    <meta property="og:description" content="AI Engineer with expertise in Deep Learning, Speech Processing, and Research" />
-    <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#141414" />
-    <title>Kanagha Sivakumar - Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kanagha Sivakumar — AI / ML Engineer</title>
+<meta name="description" content="Kanagha Sivakumar — M.S. in Artificial Intelligence at Northwestern University. Speech AI, machine learning and computer vision research.">
+<meta name="author" content="Kanagha Sivakumar">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kanagha Sivakumar — AI / ML Engineer">
+<meta property="og:description" content="M.S. in Artificial Intelligence at Northwestern University. Speech AI, machine learning and computer vision research.">
+<meta property="og:image" content="assets/kanagha.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%235A4FC7'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='58' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem('kss-theme'); } catch (e) {}
+  var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  document.documentElement.setAttribute('data-theme', saved || (prefersLight ? 'light' : 'dark'));
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Kanagha&nbsp;Sivakumar</a>
+    <nav class="nav-links" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-photo">
+      <img src="assets/kanagha.jpg" alt="Portrait of Kanagha Sivakumar" width="320" height="320" fetchpriority="high">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">AI / ML engineer &middot; Speech &amp; vision research</p>
+      <h1>Kanagha Sivakumar</h1>
+      <p class="hero-sub">M.S. in Artificial Intelligence, Northwestern University &middot; Evanston, IL</p>
+      <p class="hero-blurb">
+        I build machine learning systems that work on messy, real-world signals — separating children's
+        voices from clinical recordings, fine-tuning speech models to flag speech pathology, and pulling
+        structure out of documents nobody wants to read by hand.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="assets/Kanagha_Sivakumar_Resume.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+          Download resume
+        </a>
+        <a class="btn" href="https://github.com/kanaghasivakumar/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.09.72-.23.72-.5v-1.78c-2.92.63-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.08 1.62 1.09 1.62 1.09.94 1.6 2.47 1.14 3.07.87.1-.69.37-1.15.67-1.42-2.33-.26-4.79-1.17-4.79-5.19 0-1.15.41-2.08 1.08-2.82-.11-.27-.47-1.34.1-2.79 0 0 .88-.28 2.89 1.08a10 10 0 0 1 5.26 0c2-1.36 2.88-1.08 2.88-1.08.58 1.45.22 2.52.11 2.79.68.74 1.08 1.67 1.08 2.82 0 4.03-2.46 4.92-4.81 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.6.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/kanagha-santhoshini-sivakumar/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8.1 18.7H5.2V9.6h2.9zM6.6 8.3a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zm12.1 10.4h-2.9v-4.4c0-1.06-.02-2.42-1.48-2.42-1.48 0-1.7 1.15-1.7 2.34v4.48H9.7V9.6h2.79v1.25h.04a3.06 3.06 0 0 1 2.75-1.51c2.95 0 3.49 1.94 3.49 4.45z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn" href="mailto:kanaghasivakumar2027@u.northwestern.edu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 6.5L21 6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div class="prose">
+        <p>
+          I'm a graduate researcher at Northwestern's <strong>PedzSTAR Lab</strong>, where I work on
+          pediatric speech — extracting a child's voice out of noisy three-microphone clinical recordings,
+          and fine-tuning speech models to screen for speech pathology. Before Northwestern I spent two
+          years as a software and ML engineer in Chennai, shipping document-AI and computer-vision systems
+          that went into production for logistics, aviation and civic clients.
+        </p>
+        <p>
+          I've also worked at Northwestern's <strong>Global Poverty Research Lab</strong>, on Devidence —
+          an AI pipeline that pulls key results out of development-economics papers using GPT-4o and table
+          detection, benchmarked against 12,000+ expert-entered records from 53 studies. My main contribution
+          there was diagnostic: I found the pipeline's real bottleneck was locating the right numbers at all
+          (387 rows returned where only 143 were real) and built a stricter evaluation showing true
+          performance was about half the original estimate.
+        </p>
+        <p>
+          What I like most is the unglamorous middle of the problem: the evaluation that shows a pipeline
+          is half as good as everyone thought, the cross-microphone trick that removes an adult's voice
+          without touching the child's, the SLURM job that makes 220 hours of audio re-annotatable without
+          moving a byte.
+        </p>
+        <p>
+          Outside the lab I've spent a lot of time building teams rather than models — as General Secretary
+          of VIT's Tech Researchers Club, on the Girl Up chapter's outreach team, and, during India's second
+          COVID wave, coordinating 250+ volunteers who connected around 5,000 people with medical supplies,
+          hospital beds and oxygen.
+        </p>
+      </div>
+      <aside class="facts">
+        <h3>Education</h3>
+        <div class="fact">
+          <p class="fact-title">Northwestern University</p>
+          <p class="fact-meta">M.S. Artificial Intelligence · GPA 3.97/4.00</p>
+          <p class="fact-date">Sep 2025 – Dec 2026 (expected)</p>
+        </div>
+        <div class="fact">
+          <p class="fact-title">Vellore Institute of Technology, Chennai</p>
+          <p class="fact-meta">B.Tech Computer Science, AI &amp; ML · GPA 3.71/4.00</p>
+          <p class="fact-date">Jul 2019 – May 2023</p>
+        </div>
+        <h3>Research</h3>
+        <div class="fact">
+          <p class="fact-title">Child speech extraction &amp; speaker diarization</p>
+          <p class="fact-meta">Isolating children's voices from three-microphone clinical audio</p>
+          <p class="fact-date">PedzSTAR Lab · 2026</p>
+        </div>
+        <div class="fact">
+          <p class="fact-title">Pediatric speech intelligibility screening</p>
+          <p class="fact-meta">Fine-tuned ASR models and uncertainty metrics for speech pathology risk</p>
+          <p class="fact-date">PedzSTAR Lab · 2026</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Graduate Student Researcher</h3>
+            <p class="entry-org">PedzSTAR Lab, Northwestern University · Evanston, IL</p>
+          </div>
+          <p class="entry-date">Mar 2026 – Present</p>
+        </div>
+        <p class="entry-project">Child speech extraction &amp; speaker diarization — 3-mic clinical audio</p>
+        <ul>
+          <li>Raised adult-speech removal from 47.5% to 72.7% at 97% child-speech recall by fusing a 10&nbsp;ms Whisper-based child speech detector with 56 cross-microphone crosstalk features.</li>
+          <li>Suppressed adult-only speech by 37–95&nbsp;dB with 0.00&nbsp;dB median change to child audio, using non-generative voice isolation via cross-mic leakage unmixing.</li>
+          <li>Deployed across 220 hours of audio (1,529 sessions, 305 children) on SLURM with a lossless archive and versioned confidence tracks, enabling full-corpus re-annotation without data re-transfer.</li>
+        </ul>
+        <p class="entry-project">Pediatric speech intelligibility screening</p>
+        <ul>
+          <li>Flagged high-risk speech pathology at 69.4% accuracy by LoRA fine-tuning 16 ASR models (Whisper, Wav2Vec2, HuBERT) and deriving uncertainty metrics correlated with clinical scores.</li>
+          <li>Scaled inference to 131,000+ child utterances with batched GPU pipelines on HPC.</li>
+        </ul>
+        <p class="tags"><span>Whisper</span><span>Diarization</span><span>LoRA</span><span>SLURM</span></p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Graduate Assistant &amp; Peer Mentor</h3>
+            <p class="entry-org">Northwestern University · Evanston, IL</p>
+          </div>
+          <p class="entry-date">Fall 2026</p>
+        </div>
+        <ul>
+          <li>Graduate Assistant for MSAI 348: Introduction to Artificial Intelligence.</li>
+          <li>Peer Mentor for CS 110.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Machine Learning Intern</h3>
+            <p class="entry-org">Global Poverty Research Lab (Devidence), Northwestern University · Evanston, IL</p>
+          </div>
+          <p class="entry-date">Jun 2026 – Jul 2026</p>
+        </div>
+        <ul>
+          <li>Built an AI pipeline that extracts key results from research-paper PDFs using GPT-4o and table detection, tested against 12,000+ expert-entered records from 53 studies.</li>
+          <li>Identified the existing pipeline's main weak point as data localization (387 rows found vs. 143 real) and built a stricter evaluation showing true performance was half the original estimate.</li>
+        </ul>
+        <p class="tags"><span>GPT-4o</span><span>Document AI</span><span>Evaluation</span></p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Associate Software Engineer</h3>
+            <p class="entry-org">Sunware Technologies Pvt. Ltd. · Chennai, India</p>
+          </div>
+          <p class="entry-date">Nov 2023 – Sep 2025</p>
+        </div>
+        <p class="entry-project">Associate Software Engineer · Jan 2025 – Sep 2025</p>
+        <ul>
+          <li>Cut manual shipping-data entry by 85%+ for a logistics client with an LLM OCR pipeline on Gemini 2.0 Flash.</li>
+          <li>Mentored interns through a 12-week program, sat on interview panels and recommended interns for full-time roles.</li>
+        </ul>
+        <p class="entry-project">Software Engineer Trainee · Jan 2024 – Jan 2025</p>
+        <ul>
+          <li>Digitized handwritten pilot logbooks at 91% accuracy by pairing AWS Textract and GPT-4 with an aviation dictionary.</li>
+          <li>Cut client image-processing time by 90%+ with an image editor featuring exposure merging and interactive tuning.</li>
+        </ul>
+        <p class="entry-project">Machine Learning Intern · Nov 2023 – Jan 2024</p>
+        <ul>
+          <li>Forecast pollutant threshold breaches every 15 minutes for Bangalore Police using an autoencoder model.</li>
+        </ul>
+        <p class="tags"><span>Gemini 2.0</span><span>AWS Textract</span><span>OpenCV</span><span>Mentoring</span></p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Machine Learning Intern</h3>
+            <p class="entry-org">TextCK Analytics · Chennai, India</p>
+          </div>
+          <p class="entry-date">Aug 2022 – Sep 2022</p>
+        </div>
+        <ul>
+          <li>Worked on video processing and object detection — localizing and counting objects across frames.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <p class="card-year">2026</p>
+        <h3>Speech synthesis</h3>
+        <p class="card-body">Built FastSpeech 2 from scratch and fine-tuned HiFi-GAN to produce artifact-free 24&nbsp;kHz speech, verifying learned phoneme boundaries through attention-heatmap analysis.</p>
+        <p class="tags"><span>PyTorch</span><span>FastSpeech 2</span><span>HiFi-GAN</span><span>MFA</span></p>
+      </article>
+
+      <article class="card">
+        <p class="card-year">2026</p>
+        <h3>Structured urban synthesis</h3>
+        <p class="card-body">Reached 251.8 FID on Cityscapes with a Diffusion Transformer using cross-attention mask conditioning and classifier-free guidance, and 0.013 validation loss on 22,973 images via W&amp;B Hyperband sweeps across A100 GPUs.</p>
+        <p class="tags"><span>Diffusion Transformers</span><span>W&amp;B</span><span>SLURM</span></p>
+      </article>
+
+      <article class="card">
+        <p class="card-year">2026</p>
+        <h3>Monodepth estimation</h3>
+        <p class="card-body">Achieved 83.7% δ&lt;1.25 and 0.137 AbsRel on KITTI with self-supervised ResNet-18 depth and SE(3) pose training.</p>
+        <p class="tags"><span>PyTorch</span><span>ResNet</span><span>Computer vision</span></p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>Python · Java · SQL · JavaScript (React, Node.js) · HTML/CSS</p>
+      </div>
+      <div class="skill-group">
+        <h3>ML frameworks</h3>
+        <p>PyTorch · TensorFlow · Hugging Face (Transformers, PEFT) · OpenCV · scikit-learn · pandas</p>
+      </div>
+      <div class="skill-group">
+        <h3>Infrastructure</h3>
+        <p>Git · Docker · SLURM / HPC · Weights &amp; Biases · FastAPI · Vector databases · Globus · AWS · Azure</p>
+      </div>
+      <div class="skill-group">
+        <h3>Domains</h3>
+        <p>Speech (ASR, diarization, VAD, TTS) · Computer vision · LLMs (document AI, evals) · Diffusion · RAG</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2 class="section-title">Get in touch</h2>
+    <p class="contact-lead">
+      I'm looking for full-time AI/ML roles starting January 2027. If you're working on speech,
+      multimodal models or applied ML research, I'd like to hear from you.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:kanaghasivakumar2027@u.northwestern.edu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 6.5L21 6"/></svg>
+        kanaghasivakumar2027@u.northwestern.edu
+      </a>
+      <a class="btn" href="assets/Kanagha_Sivakumar_Resume.pdf" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+        Resume (PDF)
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year">2026</span> Kanagha Sivakumar</p>
+  <p class="footer-links">
+    <a href="https://github.com/kanaghasivakumar/" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/kanagha-santhoshini-sivakumar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:kanaghasivakumar2027@u.northwestern.edu">Email</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
