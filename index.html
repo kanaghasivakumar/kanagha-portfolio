@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kanagha Sivakumar — AI / ML Engineer</title>
-<meta name="description" content="Kanagha Sivakumar — M.S. in Artificial Intelligence at Northwestern University. Speech AI, machine learning and computer vision research.">
+<meta name="description" content="Kanagha Sivakumar — AI/ML engineer working on speech, computer vision and LLMs, seeking full-time AI/ML Engineer roles from January 2027. Finishing an M.S. in Artificial Intelligence at Northwestern (Dec 2026).">
 <meta name="author" content="Kanagha Sivakumar">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kanagha Sivakumar — AI / ML Engineer">
-<meta property="og:description" content="M.S. in Artificial Intelligence at Northwestern University. Speech AI, machine learning and computer vision research.">
+<meta property="og:description" content="Kanagha Sivakumar — AI/ML engineer working on speech, computer vision and LLMs, seeking full-time AI/ML Engineer roles from January 2027. Finishing an M.S. in Artificial Intelligence at Northwestern (Dec 2026).">
 <meta property="og:image" content="assets/kanagha.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -57,13 +57,14 @@
       <img src="assets/kanagha.jpg" alt="Portrait of Kanagha Sivakumar" width="1066" height="1368" fetchpriority="high">
     </div>
     <div class="hero-text">
-      <p class="eyebrow">AI / ML engineer &middot; Speech &amp; vision research</p>
+      <p class="eyebrow">AI / ML engineer &middot; Speech, computer vision &amp; LLMs</p>
       <h1>Kanagha Sivakumar</h1>
-      <p class="hero-sub">M.S. in Artificial Intelligence, Northwestern University &middot; Evanston, IL</p>
+      <p class="hero-sub">M.S. in Artificial Intelligence, Northwestern University (expected Dec 2026) &middot; Evanston, IL</p>
       <p class="hero-blurb">
-        I build machine learning systems that work on messy, real-world signals — separating children's
-        voices from clinical recordings, fine-tuning speech models to flag speech pathology, and pulling
-        structure out of documents nobody wants to read by hand.
+        I build AI that works on messy, real-world data: children's speech, handwritten records, and dense
+        research papers. At Northwestern's PedzSTAR Lab I work on speech AI for children, where standard
+        speech recognition often fails; before grad school I spent two years shipping document-AI systems
+        in industry. I'm looking for full-time AI/ML Engineer roles starting January 2027.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="assets/Kanagha_Sivakumar_Resume.pdf" download>
@@ -91,11 +92,12 @@
     <div class="about-grid">
       <div class="prose">
         <p>
-          I'm a graduate researcher at Northwestern's <strong>PedzSTAR Lab</strong>, where I work on
-          pediatric speech — extracting a child's voice out of noisy three-microphone clinical recordings,
-          and fine-tuning speech models to screen for speech pathology. Before Northwestern I spent two
-          years as a software and ML engineer in Chennai, shipping document-AI and computer-vision systems
-          that went into production for logistics, aviation and civic clients.
+          I'm an AI/ML engineer finishing my M.S. in Artificial Intelligence at Northwestern. At the
+          <strong>PedzSTAR Lab</strong> I work on pediatric speech — extracting a child's voice out of noisy
+          three-microphone clinical recordings, and fine-tuning speech models to screen for speech pathology.
+          Before Northwestern I spent two years as a software and ML engineer in Chennai, going from ML Intern
+          to Associate Software Engineer and shipping document-AI and computer-vision systems into production
+          for logistics, aviation and civic clients.
         </p>
         <p>
           I've also worked at Northwestern's <strong>Global Poverty Research Lab</strong>, on Devidence —
@@ -109,7 +111,8 @@
           What I like most is the unglamorous middle of the problem: the evaluation that shows a pipeline
           is half as good as everyone thought, the cross-microphone trick that removes an adult's voice
           without touching the child's, the SLURM job that makes 220 hours of audio re-annotatable without
-          moving a byte.
+          moving a byte. I care about building models that hold up outside the benchmark, and about testing
+          them honestly.
         </p>
         <p>
           Outside the lab I've spent a lot of time building teams rather than models — as General Secretary
@@ -137,8 +140,8 @@
           <p class="fact-date">PedzSTAR Lab · 2026</p>
         </div>
         <div class="fact">
-          <p class="fact-title">Pediatric speech intelligibility screening</p>
-          <p class="fact-meta">Fine-tuned ASR models and uncertainty metrics for speech pathology risk</p>
+          <p class="fact-title">Speech Intelligibility Prediction (SIP)</p>
+          <p class="fact-meta">Intelligibility measurement decoupled from ASR confidence, for clinical pediatric speech</p>
           <p class="fact-date">PedzSTAR Lab · 2026</p>
         </div>
       </aside>
@@ -163,8 +166,9 @@
           <li>Suppressed adult-only speech by 37–95&nbsp;dB with 0.00&nbsp;dB median change to child audio, using non-generative voice isolation via cross-mic leakage unmixing.</li>
           <li>Deployed across 220 hours of audio (1,529 sessions, 305 children) on SLURM with a lossless archive and versioned confidence tracks, enabling full-corpus re-annotation without data re-transfer.</li>
         </ul>
-        <p class="entry-project">Pediatric speech intelligibility screening</p>
+        <p class="entry-project">Speech Intelligibility Prediction (SIP) — pediatric intelligibility screening</p>
         <ul>
+          <li>Developing SIP, a research framework that separates intelligibility measurement from ASR confidence — standard confidence reflects how decisively a model chose an output, while SIP measures how much the acoustic signal itself constrained the space of possible interpretations, a more clinically meaningful quantity for developmental and atypical speech, where WER is unreliable.</li>
           <li>Flagged high-risk speech pathology at 69.4% accuracy by LoRA fine-tuning 16 ASR models (Whisper, Wav2Vec2, HuBERT) and deriving uncertainty metrics correlated with clinical scores.</li>
           <li>Scaled inference to 131,000+ child utterances with batched GPU pipelines on HPC.</li>
         </ul>
@@ -177,11 +181,11 @@
             <h3>Graduate Assistant &amp; Peer Mentor</h3>
             <p class="entry-org">Northwestern University · Evanston, IL</p>
           </div>
-          <p class="entry-date">Fall 2026</p>
+          <p class="entry-date">Sep 2026 – Present</p>
         </div>
         <ul>
-          <li>Graduate Assistant for MSAI 348: Introduction to Artificial Intelligence.</li>
-          <li>Peer Mentor for CS 110.</li>
+          <li>Graduate Teaching Assistant for MSAI 348: Intro to AI, under course instructor Prof. Mohammed Alam.</li>
+          <li>Peer Mentor for CS 110: Introduction to Computer Programming, Computer Science Department, under course instructor Prof. Michael Horn.</li>
         </ul>
       </article>
 
@@ -234,7 +238,7 @@
           <p class="entry-date">Aug 2022 – Sep 2022</p>
         </div>
         <ul>
-          <li>Worked on video processing and object detection — localizing and counting objects across frames.</li>
+          <li>Worked on a surveillance-video system that identified and counted individuals and groups entering and exiting a building, to maintain a log of how many people and groups were inside at all times.</li>
         </ul>
       </article>
 
@@ -282,11 +286,11 @@
       </div>
       <div class="skill-group">
         <h3>Infrastructure</h3>
-        <p>Git · Docker · SLURM / HPC · Weights &amp; Biases · FastAPI · Vector databases · Globus · AWS · Azure</p>
+        <p>Git · Docker · SLURM / HPC · Weights &amp; Biases · FastAPI · Vector &amp; graph databases · Globus · AWS · Azure</p>
       </div>
       <div class="skill-group">
         <h3>Domains</h3>
-        <p>Speech (ASR, diarization, VAD, TTS) · Computer vision · LLMs (document AI, evals) · Diffusion · RAG</p>
+        <p>Speech (ASR, diarization, VAD, TTS) · Computer vision (CNNs, object detection, monocular depth) · LLMs (document AI, evals) · Diffusion · RAG</p>
       </div>
     </div>
   </section>
@@ -294,8 +298,8 @@
   <section class="section contact" id="contact">
     <h2 class="section-title">Get in touch</h2>
     <p class="contact-lead">
-      I'm looking for full-time AI/ML roles starting January 2027. If you're working on speech,
-      multimodal models or applied ML research, I'd like to hear from you.
+      I'm looking for full-time AI/ML Engineer roles starting January 2027. If you're working on
+      speech AI, document AI or applied ML, I'd like to hear from you.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="mailto:kanaghasivakumar2027@u.northwestern.edu">
